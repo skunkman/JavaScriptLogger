@@ -5,7 +5,7 @@
  * Anything that implements this interface will be injected in to the ErrorLogger library.
  *
  * @author Robert Gump
- * @version 0.5.0
+ * @version 0.5.1
  */
 interface ErrorInterface
 {

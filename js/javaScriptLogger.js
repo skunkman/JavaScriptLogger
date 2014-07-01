@@ -5,7 +5,7 @@
  * Based on the window onerror trigger, this sends the JS error message to the server via AJAX as JSON.
  *
  * @author Robert Gump
- * @version 0.5.0
+ * @version 0.5.1
  */
 var logErrors = function (errorMessage, errorUrl, errorLine) {
     var errorAJAX = new XMLHttpRequest(),

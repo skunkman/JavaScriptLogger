@@ -7,7 +7,7 @@ require_once('interfaces/errorInterface.php');
  * Parses the JSON sent through the constructor when getMessage method is called.
  *
  * @author Robert Gump
- * @version 0.5.0
+ * @version 0.5.1
  */
 class JavaScriptError implements ErrorInterface
 {

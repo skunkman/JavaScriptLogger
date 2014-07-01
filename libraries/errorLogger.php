@@ -5,7 +5,7 @@
  * Based on the error sent via dependency injection, this saves the error to the requested log.
  *
  * @author Robert Gump
- * @version 0.5.0
+ * @version 0.5.1
  */
 class ErrorLogger
 {
@@ -40,6 +40,6 @@ class ErrorLogger
     {
         $currentTimeStamp = date('Y-m-d H:i:s', time());
         return '[' . $currentTimeStamp . '] ' . $_SERVER['HTTP_USER_AGENT'] . ' - Client: ' .
-            $_SERVER['REMOTE_ADDR'] . ' - ' . $this->error->getMessage . "\n";
+            $_SERVER['REMOTE_ADDR'] . ' - ' . $this->error->getMessage() . "\n";
     }
 }
