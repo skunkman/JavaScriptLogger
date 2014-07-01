@@ -16,7 +16,7 @@ class ErrorLogger
 	 */
     public function __construct(ErrorInterface $errorType)
     {
-        $this->error = $errorType->getMessage();
+        $this->error = $errorType;
     }
 
 	/**
@@ -40,6 +40,6 @@ class ErrorLogger
     {
         $currentTimeStamp = date('Y-m-d H:i:s', time());
         return '[' . $currentTimeStamp . '] ' . $_SERVER['HTTP_USER_AGENT'] . ' - Client: ' .
-            $_SERVER['REMOTE_ADDR'] . ' - ' . $this->error . "\n";
+            $_SERVER['REMOTE_ADDR'] . ' - ' . $this->error->getMessage . "\n";
     }
 }
